@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario de Registro</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+                <br /><br />
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required />
+                <br /><br />
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" />
+                <br /><br />
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero">
+                    <optgroup label="Opciones">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </optgroup>
+                </select>
+                <br /><br />
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    cols="40"
+                    placeholder="Escribe tu mensaje aquí..."></textarea>
+                <br /><br />
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+        <!-- 
+       xplicación del código:
+<fieldset> agrupa los elementos del formulario.
+
+<legend> proporciona un título al grupo de campos.
+
+<label> asocia una descripción con un campo <input>, <select>, etc.
+
+<input> permite ingresar datos (nombre, correo, teléfono).
+
+<select> crea una lista desplegable con <optgroup> para agrupar opciones.
+
+<option> representa cada opción dentro de <select>.
+
+<textarea> es un campo de texto multilínea.
+
+<button> envía el formulario.
+    --></body>
+</html>
